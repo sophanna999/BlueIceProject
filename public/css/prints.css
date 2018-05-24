@@ -1,0 +1,46 @@
+.a4 {
+    width: 21cm;
+    height: 29.7cm;
+    padding: 1cm;
+}
+
+.card-body, .card-block {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.form-control {
+    padding: 0rem 0rem;
+}
+
+.form-group {
+    margin-bottom: 0rem;
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+    body {
+        margin: 0;
+    }
+    .test {
+        margin: 0px, 0px, 0px, 0px !important;
+    }
+    .btn, .breadcrumb, .head-top, hr, footer {
+        display: none !important;
+    }
+    .invoice-title h2, .invoice-title h3 {
+        display: inline-block !important;
+    }
+    .table>tbody>tr>.no-line {
+        border-top: none !important;
+    }
+    .table>thead>tr>.no-line {
+        border-bottom: none !important;
+    }
+    .table>tbody>tr>.thick-line {
+        border-top: 2px solid !important;
+    }
+}
